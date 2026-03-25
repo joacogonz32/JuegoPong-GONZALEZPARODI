@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://bm7mb3wgj43s8"]
+
+[ext_resource type="Script" uid="uid://c71y1imjeyj6k" path="res://winner.gd" id="1_8lp1d"]
+
+[node name="Winner" type="Control" unique_id=1458289945]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_8lp1d")
+
+[node name="Overlay" type="ColorRect" parent="." unique_id=1412405950]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1333236029]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -62.0
+offset_top = -46.5
+offset_right = 62.0
+offset_bottom = 46.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="Title" type="Label" parent="VBoxContainer" unique_id=713149776]
+layout_mode = 2
+text = "GANADOR"
+
+[node name="BtnReplay" type="Button" parent="VBoxContainer" unique_id=2063510376]
+custom_minimum_size = Vector2(380, 0)
+layout_mode = 2
+text = "Jugar de nuevo"
+
+[node name="BtnMenu" type="Button" parent="VBoxContainer" unique_id=1691771653]
+custom_minimum_size = Vector2(380, 0)
+layout_mode = 2
+text = "Volver al menu"

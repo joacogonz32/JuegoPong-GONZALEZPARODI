@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://b8yasb66se0xg"]
+
+[ext_resource type="Script" uid="uid://dw2slprfkgadk" path="res://difficulty.gd" id="1_vldk0"]
+
+[node name="Difficulty" type="Control" unique_id=1430001104]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vldk0")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=28683163]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -190.0
+offset_top = -95.0
+offset_right = 190.0
+offset_bottom = 95.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="Title" type="Label" parent="VBoxContainer" unique_id=745298670]
+layout_mode = 2
+text = "Dificultad"
+
+[node name="Subtitle" type="Label" parent="VBoxContainer" unique_id=1354741767]
+layout_mode = 2
+text = "Elegi la dificultad de la computadora:"
+
+[node name="BtnEasy" type="Button" parent="VBoxContainer" unique_id=1659385050]
+custom_minimum_size = Vector2(380, 0)
+layout_mode = 2
+text = "Facil"
+
+[node name="BtnMedium" type="Button" parent="VBoxContainer" unique_id=273185759]
+custom_minimum_size = Vector2(380, 0)
+layout_mode = 2
+text = "Media"
+
+[node name="BtnHard" type="Button" parent="VBoxContainer" unique_id=1608118243]
+custom_minimum_size = Vector2(380, 0)
+layout_mode = 2
+text = "Dificil"
+
+[node name="BtnBack" type="Button" parent="VBoxContainer" unique_id=661406134]
+custom_minimum_size = Vector2(380, 0)
+layout_mode = 2
+text = "← Volver"

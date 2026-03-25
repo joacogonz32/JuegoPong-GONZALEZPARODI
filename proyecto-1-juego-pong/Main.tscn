@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://bx8bgfx15lprv"]
+
+[ext_resource type="Script" uid="uid://drjdkn4oen03t" path="res://main.gd" id="1_glv2v"]
+[ext_resource type="PackedScene" uid="uid://jy8dyhlsoy43" path="res://Court.tscn" id="2_cm0pq"]
+[ext_resource type="PackedScene" uid="uid://yd381q6xitjo" path="res://Paddle.tscn" id="3_fos0i"]
+[ext_resource type="PackedScene" uid="uid://cn1lgn38rnxng" path="res://Ball.tscn" id="4_3dxm6"]
+[ext_resource type="PackedScene" uid="uid://dpkupqc5tb73y" path="res://Menu.tscn" id="5_03owx"]
+[ext_resource type="PackedScene" uid="uid://b8yasb66se0xg" path="res://Difficulty.tscn" id="6_wkp8b"]
+[ext_resource type="PackedScene" uid="uid://bpry6f4o4r35l" path="res://Pause.tscn" id="7_20pc6"]
+[ext_resource type="PackedScene" uid="uid://bx8x8qyxhx4j7" path="res://Goal.tscn" id="8_5vvyt"]
+[ext_resource type="PackedScene" uid="uid://bm7mb3wgj43s8" path="res://Winner.tscn" id="9_c6i3y"]
+
+[node name="Main" type="Node2D" unique_id=1735585824]
+script = ExtResource("1_glv2v")
+
+[node name="Court" parent="." unique_id=283994649 instance=ExtResource("2_cm0pq")]
+
+[node name="Paddle" parent="." unique_id=2090839103 instance=ExtResource("3_fos0i")]
+
+[node name="Paddle2" parent="." unique_id=1667941233 instance=ExtResource("3_fos0i")]
+player = 2
+
+[node name="Ball" parent="." unique_id=2115543887 instance=ExtResource("4_3dxm6")]
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=923546807]
+process_mode = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI" unique_id=2026136011]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_top = 5.0
+offset_right = 20.0
+offset_bottom = 45.0
+grow_horizontal = 2
+
+[node name="ScoreP1" type="Label" parent="UI/HBoxContainer" unique_id=516746396]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "0"
+
+[node name="Separator" type="Label" parent="UI/HBoxContainer" unique_id=1690670052]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = ":"
+
+[node name="ScoreP2" type="Label" parent="UI/HBoxContainer" unique_id=1348684438]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "0"
+
+[node name="Menu" parent="." unique_id=2018627631 instance=ExtResource("5_03owx")]
+visible = false
+
+[node name="Difficulty" parent="." unique_id=1430001104 instance=ExtResource("6_wkp8b")]
+visible = false
+
+[node name="Pause" parent="." unique_id=519027110 instance=ExtResource("7_20pc6")]
+visible = false
+
+[node name="Goal" parent="." unique_id=1958494525 instance=ExtResource("8_5vvyt")]
+visible = false
+
+[node name="Winner" parent="." unique_id=1458289945 instance=ExtResource("9_c6i3y")]
+visible = false

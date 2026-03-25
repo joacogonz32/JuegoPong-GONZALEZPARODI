@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://jy8dyhlsoy43"]
+
+[ext_resource type="Script" uid="uid://df0yb6shl04ef" path="res://court.gd" id="1_3wnbp"]
+
+[node name="Court" type="Node2D" unique_id=283994649]
+script = ExtResource("1_3wnbp")
